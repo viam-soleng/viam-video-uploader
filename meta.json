@@ -1,0 +1,30 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "bill:cloud-video-upload",
+  "visibility": "public",
+  "url": "https://github.com/viam-soleng/viam-video-uploader/",
+  "description": "A generic service that periodically saves video segments and uploads them to Viam Cloud or Google Cloud Storage with configurable intervals and scheduling.",
+  "models": [
+    {
+      "api": "rdk:service:generic",
+      "model": "bill:cloud-video-upload:video-upload",
+      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "markdown_link": "README.md#model-billcloud-video-uploadvideo-upload"
+    }
+  ],
+  "applications": null,
+  "markdown_link": "README.md",
+  "entrypoint": "run.sh",
+  "first_run": "",
+  "build": {
+    "build": "./build.sh",
+    "setup": "./setup.sh",
+    "path": "dist/archive.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64",
+      "darwin/arm64",
+      "windows/amd64"
+    ]
+  }
+}
